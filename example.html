@@ -1,6 +1,11 @@
 <html>
 <head>
   <title>example</title>
+  <style>
+    body {
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <link rel="stylesheet" href="./build/build.css"></link>
@@ -8,12 +13,16 @@
   <script>
     var MultiSelect = require('multi-select');
     var select = new MultiSelect({
+      label: '想去哪裡玩？',
       options: [
         { key: 't', label: '東京' },
         { key: 'b', label: '北京' },
-        { key: 'n', label: '南京' }
+        { key: 'n', label: '南京' },
+        { key: 'tp', label: '台北' },
+        { key: 'tn', label: '台南' },
+        { key: 'tc', label: '台中' }
       ],
-      select: 'd'
+      select: ['t']
     });
 
     document.body.appendChild(select.el);

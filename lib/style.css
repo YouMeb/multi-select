@@ -1,3 +1,79 @@
 .multi-select {
+	position: relative;
 	display: inline-block;
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	padding: 0 48px 0 0;
+	height: 42px;
+	line-height: 42px;
+	cursor: pointer;
+}
+
+.multi-select:after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+	right: 12px;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	background: url(../images/arrow.png) bottom left;
+}
+
+.multi-select.expand:after {
+	background-position: top left;
+}
+
+.multi-select-info {
+	position: relative;
+	z-index: 1;
+}
+
+.multi-select-label {
+	display: inline-block;
+	padding: 0 12px;
+	margin-right: 12px;
+	background: #f6f6f6;
+	color: #959595;
+}
+
+.multi-select-label.hide {
+	display: none;
+}
+
+.multi-select-options {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	display: none;
+	opacity: 0;
+	transition: all .4s;
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+	height: 150px;
+}
+
+.multi-select-options.display {
+	display: block;
+}
+
+.multi-select-options.show {
+	opacity: 1;
+}
+
+.multi-select-option-list {
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.multi-select-option {
+	border-bottom: 1px #f5f5f5 solid;
+	padding: 0 12px;
 }

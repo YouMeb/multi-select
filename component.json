@@ -7,7 +7,9 @@
   ],
   "dependencies": {
     "component/domify": "*",
-    "component/delegate": "*"
+    "component/delegate": "*",
+    "poying/transition-duration": "*",
+    "youmeb/scrollbar.pure": "*"
   },
   "development": {},
   "scripts": [
@@ -18,6 +20,9 @@
   ],
   "templates": [
     "lib/template.html"
+  ],
+  "images": [
+    "images/arrow.png"
   ],
   "license": "MIT"
 }
