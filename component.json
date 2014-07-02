@@ -1,0 +1,23 @@
+{
+  "name": "multi-select",
+  "version": "0.0.0",
+  "keywords": [
+    "multi",
+    "select"
+  ],
+  "dependencies": {
+    "component/domify": "*",
+    "component/delegate": "*"
+  },
+  "development": {},
+  "scripts": [
+    "lib/index.js"
+  ],
+  "styles": [
+    "lib/style.css"
+  ],
+  "templates": [
+    "lib/template.html"
+  ],
+  "license": "MIT"
+}

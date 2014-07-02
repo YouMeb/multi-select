@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>example</title>
+</head>
+<body>
+  <link rel="stylesheet" href="./build/build.css"></link>
+  <script src="./build/build.js"></script>
+  <script>
+    var MultiSelect = require('multi-select');
+    var select = new MultiSelect({
+      options: [
+        { key: 't', label: '東京' },
+        { key: 'b', label: '北京' },
+        { key: 'n', label: '南京' }
+      ],
+      select: 'd'
+    });
+
+    document.body.appendChild(select.el);
+  </script>
+</body>
+</html>
